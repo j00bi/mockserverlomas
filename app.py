@@ -15,7 +15,7 @@ mock_data = {
     }
 }
 
-@app.route("/getPCDetails", methods=["POST"])
+@app.route("/getPCDetails", methods=["POST", "GET"])
 def get_pc_details():
     data = request.get_json()
     pc_num = data.get("PC_Num")
